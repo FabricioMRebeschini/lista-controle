@@ -7,6 +7,7 @@ import { ListasComponent } from './listas/listas.component';
 import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { SharedModule } from '../shared/shared.module';
 import {MatMenuModule} from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {MatMenuModule} from '@angular/material/menu';
     ListasRoutingModule,
     AppMaterialModule,
     SharedModule,
-    MatMenuModule
+    MatMenuModule,
+    MatIconModule
 
   ]
 })

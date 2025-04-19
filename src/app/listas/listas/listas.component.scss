@@ -16,15 +16,33 @@
   margin-left: 8px;
 }
 
+.tabela{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 
 mat-card{
   border: 2px solid  rgb(10 35 10);
   padding: 20px;
 }
 
-.btn-add{
-  margin-bottom: 18px;
+.header-actions, .cell-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
+
+
+.delete-btn{
+  color: rgb(154, 30, 30);
+}
+// .btn-add{
+//   margin-bottom: 18px;
+// }
 
 th{
   border:1px solid rgba(240, 248, 255, 0.114);

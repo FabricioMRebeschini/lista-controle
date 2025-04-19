@@ -14,7 +14,7 @@ import { ErrorDialogComponent } from '../../shared/components/error-dialog/error
 export class ListasComponent  implements OnInit{
 
   listas$:Observable<Lista[]>;
-  displayedColumns = ['_id','name','quantify']
+  displayedColumns = ['_id','name','quantify','actions']
   //listasService: ListasService;
 
   constructor(

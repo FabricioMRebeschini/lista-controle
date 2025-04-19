@@ -10,6 +10,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDialogModule} from '@angular/material/dialog';
+import { from } from 'rxjs';
+import {MatIconModule} from  '@angular/material/icon' ;
 
 
 
@@ -23,6 +25,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatButtonModule,
     MatProgressSpinnerModule,
     MatDialogModule,
+    MatIconModule
   ],
 })
 export class AppMaterialModule { }
