@@ -1,0 +1,46 @@
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-table {
+  width: 100%;
+}
+
+.demo-button-container {
+  padding-bottom: 16px;
+}
+
+.demo-button + .demo-button {
+  margin-left: 8px;
+}
+
+
+mat-card{
+  border: 2px solid  rgb(10 35 10);
+  padding: 20px;
+}
+
+.btn-add{
+  margin-bottom: 18px;
+}
+
+th{
+  border:1px solid rgba(240, 248, 255, 0.114);
+  color: #1fb37f;
+}
+
+
+.loading-spinner{
+  padding: 10px;
+  background-color: #cccccc1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p{
+    color: rgb(164, 154, 154);
+  }
+}

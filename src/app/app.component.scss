@@ -1,0 +1,14 @@
+
+
+.center{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.header-linearGradient{
+  background-image: linear-gradient(90deg, #1f2c27 0%, #225140 51%, #0a4c34 100%);
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
