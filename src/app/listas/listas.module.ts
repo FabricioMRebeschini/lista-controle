@@ -8,11 +8,13 @@ import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { SharedModule } from '../shared/shared.module';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { ListaFormComponent } from './lista-form/lista-form.component';
 
 
 @NgModule({
   declarations: [
-    ListasComponent
+    ListasComponent,
+    ListaFormComponent
   ],
   imports: [
     CommonModule,

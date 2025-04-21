@@ -40,4 +40,8 @@ export class ListasComponent  implements OnInit{
   ngOnInit(): void {
 
   }
+
+  onAdd(){
+    console.log('onAdd')
+  }
 }
