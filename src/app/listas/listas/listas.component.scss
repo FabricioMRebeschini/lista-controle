@@ -1,3 +1,15 @@
+// *{
+//   width: 100%;
+//   height: auto;
+//   box-sizing: border-box;
+// }
+
+// .mat-elevation-z8 .mat-header-cell,
+// .mat-elevation-z8 .mat-cell {
+//   flex: 1; /* Tamanhos iguais para todas as colunas */
+//   text-align: center; /* Alinha o conteúdo ao centro */
+// }
+
 .center{
   display: flex;
   justify-content: center;
@@ -6,6 +18,7 @@
 
 .demo-table {
   width: 100%;
+
 }
 
 .demo-button-container {
@@ -24,7 +37,10 @@
 }
 
 
+
 mat-card{
+  width: 100%;
+  max-width: 1200px;
   border: 2px solid  rgb(10 35 10);
   padding: 20px;
 }
@@ -33,16 +49,21 @@ mat-card{
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 
+}
+
+.titulo-container{
+  display: flex; justify-content: center; align-items: center;
 }
 
 
 .delete-btn{
   color: rgb(154, 30, 30);
 }
-// .btn-add{
-//   margin-bottom: 18px;
-// }
+.edit-btn{
+  color:rgb(105, 105, 151)
+}
 
 th{
   border:1px solid rgba(240, 248, 255, 0.114);
@@ -62,3 +83,28 @@ th{
     color: rgb(164, 154, 154);
   }
 }
+
+
+
+
+@media screen and (max-width:409px){
+  mat-card{
+    width: 374px;
+    max-width: 374px;
+
+  }
+  }
+
+
+  @media screen and (min-width:1100px) {
+    mat-card{
+      width: 900px;
+
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+    }
+
+  }

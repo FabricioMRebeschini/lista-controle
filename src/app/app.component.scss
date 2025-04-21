@@ -3,12 +3,42 @@
 .center{
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+
 }
-
-
 .header-linearGradient{
   background-image: linear-gradient(90deg, #1f2c27 0%, #225140 51%, #0a4c34 100%);
   margin-bottom: 10px;
   border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
+
+.mat-column {
+  flex: 1; /* Define largura igual para todas as colunas */
+  overflow: hidden; /* Evita problemas de transbordamento */
+  text-align: center; /* Centraliza o conteúdo das células */
+}
+
+
+
+@media screen and (max-width:409px){
+  .header-linearGradient{
+    width: 374px;
+    max-width: 374px;
+  }
+
+  .center{
+    width: 374px;
+    max-width: 374px;
+  }
+
+  div{
+    width: 374px;
+  }
+
+  }
+
+
+
