@@ -15,7 +15,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ListasComponent  implements OnInit{
 
   listas$:Observable<Lista[]>;
-  displayedColumns = ['_id','name','quantify','actions']
+  displayedColumns = ['name','quantify','actions']
   //listasService: ListasService;
 
   constructor(
@@ -45,6 +45,7 @@ export class ListasComponent  implements OnInit{
   }
 
   onAdd(){
-    this.router.navigate(['new'], {relativeTo: this.route})
+    //Definindo a rota e especificando a mesma raiz
+    this.router.navigate(['new'], {relativeTo: this.route});
   }
 }

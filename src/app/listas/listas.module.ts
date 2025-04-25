@@ -9,6 +9,7 @@ import { SharedModule } from '../shared/shared.module';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { ListaFormComponent } from './lista-form/lista-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ListaFormComponent } from './lista-form/lista-form.component';
     AppMaterialModule,
     SharedModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    ReactiveFormsModule
 
   ]
 })

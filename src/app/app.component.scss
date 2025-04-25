@@ -1,4 +1,7 @@
-
+.titulo-container{
+  width: 100%;
+  margin: 0 auto;
+}
 
 .center{
   display: flex;
@@ -8,10 +11,8 @@
 }
 .header-linearGradient{
   background-image: linear-gradient(90deg, #1f2c27 0%, #225140 51%, #0a4c34 100%);
-  margin-bottom: 10px;
   border-radius: 10px;
   width: 100%;
-  max-width: 1200px;
   padding: 20px;
 }
 
@@ -19,22 +20,6 @@
 
 
 
-@media screen and (max-width:409px){
-  .header-linearGradient{
-    width: 374px;
-    max-width: 374px;
-  }
-
-  .center{
-    width: 374px;
-    max-width: 374px;
-  }
-
-  div{
-    width: 374px;
-  }
-
-  }
 
 
 

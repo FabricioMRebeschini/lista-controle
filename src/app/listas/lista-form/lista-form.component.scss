@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+mat-card {
+  max-width: 97%;
+  margin: 2em auto;
+}
+
+mat-toolbar{
+
+  display: flex;
+  justify-content: center;
+}
+
+.full-width{
+  width:100%;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+}
+
+button:nth-last-child(1){
+  color: rgb(154, 30, 30);;
+}
+
+
