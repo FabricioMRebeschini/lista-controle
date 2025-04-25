@@ -4,6 +4,7 @@ import { ListasService } from '../service/listas.service';
 import { catchError, Observable, of } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { ErrorDialogComponent } from '../../shared/components/error-dialog/error-dialog.component';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-listas',
@@ -19,6 +20,8 @@ export class ListasComponent  implements OnInit{
 
   constructor(
     public dialog: MatDialog,
+    private router: Router,
+    private route : ActivatedRoute,
     private listasService: ListasService){
     //this.listasService = new ListasService();
     this.listas$ = this.listasService.list()
@@ -42,6 +45,6 @@ export class ListasComponent  implements OnInit{
   }
 
   onAdd(){
-    console.log('onAdd')
+    this.router.navigate(['new'], {relativeTo: this.route})
   }
 }
