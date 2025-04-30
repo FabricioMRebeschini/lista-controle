@@ -14,6 +14,7 @@ import { from } from 'rxjs';
 import {MatIconModule} from  '@angular/material/icon' ;
 import {MatFormFieldControl, MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input'
+import { MatSelect, MatSelectModule } from '@angular/material/select';
 
 
 
@@ -29,7 +30,8 @@ import {MatInputModule} from '@angular/material/input'
     MatDialogModule,
     MatIconModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule
   ],
 })
 export class AppMaterialModule { }

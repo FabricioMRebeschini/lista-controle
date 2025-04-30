@@ -28,4 +28,8 @@ export class ListasService {
       //     }
       // ];
   }
+
+  save(record: Lista){
+    return this.httpClient.post<Lista>(this.API, record).pipe(first());
+  }
 }
