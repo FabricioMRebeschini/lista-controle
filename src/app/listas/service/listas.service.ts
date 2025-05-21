@@ -17,7 +17,7 @@ export class ListasService {
 
       return this.httpClient.get<Lista[]>(this.API).pipe(
         first(),
-        delay(1000),
+        delay(500),
         tap(listas => console.log(listas))
       );
       // return [
