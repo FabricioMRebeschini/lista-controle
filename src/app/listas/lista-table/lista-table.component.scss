@@ -1,0 +1,81 @@
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-table {
+  width: 100%;
+
+}
+
+
+
+.demo-button-container {
+  padding-bottom: 16px;
+}
+
+.demo-button + .demo-button {
+  margin-left: 8px;
+}
+
+.tabela{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+
+mat-card{
+  min-width: 400px;
+  max-width: 97%;
+  margin: 2em auto;
+  border: 2px solid  rgb(10 35 10);
+  padding: 20px;
+}
+
+.header-actions, .cell-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+
+.titulo-container{
+  display: flex; justify-content: center; align-items: center;
+}
+
+
+.delete-btn{
+  color: rgb(154, 30, 30);
+}
+.edit-btn{
+  color:rgb(105, 105, 151)
+}
+
+th{
+    border:1px solid rgba(240, 248, 255, 0.114);
+    color: #1fb37f;
+    position: sticky;
+    top: 0;
+    background: #fff; /* Para evitar que o texto fique sobreposto */
+    z-index: 100; /* Para garantir que fique acima do conteúdo */
+    }
+
+
+.loading-spinner{
+  padding: 10px;
+  background-color: #cccccc1d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p{
+    color: rgb(164, 154, 154);
+  }
+}

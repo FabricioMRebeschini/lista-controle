@@ -10,7 +10,10 @@
 //   text-align: center; /* Alinha o conteúdo ao centro */
 // }
 
-
+.container{
+  max-width: 80%;
+  margin: 2em auto;
+}
 .center{
   display: flex;
   justify-content: center;
@@ -31,20 +34,40 @@
 }
 
 .tabela{
+  min-width: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  overflow: auto;
+  max-height: 850px;
+
+}
+
+.tabela::-webkit-scrollbar {
+    width: 8px; /* Define a largura da barra de rolagem */
+}
+
+.tabela::-webkit-scrollbar-track {
+    background: #3c3e3d; /* Cor de fundo da trilha */
+    border-radius: 8px;
+}
+
+.tabela::-webkit-scrollbar-thumb {
+    background: #888; /* Cor do botão de rolagem */
+    border-radius: 8px;
+}
+
+.tabela::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor ao passar o mouse */
 }
 
 
 
-mat-card{
-  max-width: 97%;
-  margin: 2em auto;
-  border: 2px solid  rgb(10 35 10);
-  padding: 20px;
-}
+
+
+
 
 .header-actions, .cell-actions{
   display: flex;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, NonNullableFormBuilder } from '@angular/forms';
 import { ListasService } from '../service/listas.service';
 import { reduce } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -16,15 +16,17 @@ export class ListaFormComponent implements OnInit {
 
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder,
+  constructor(
+
+    private formBuilder: NonNullableFormBuilder,
     private service: ListasService,
     private snackBar: MatSnackBar,
     private location: Location
   ){
     this.form = this.formBuilder.group({
-      name:[null],
-      quantity:[null]
-    })
+      name:[''],
+      quantity:['']
+    });
   }
 
   ngOnInit(): void {

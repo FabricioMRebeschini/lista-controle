@@ -15,7 +15,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class ListasComponent  implements OnInit{
 
   listas$:Observable<Lista[]>;
-  displayedColumns = ['name','quantify','actions']
+
   //listasService: ListasService;
 
   constructor(

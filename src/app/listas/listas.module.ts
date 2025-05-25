@@ -10,12 +10,14 @@ import {MatMenuModule} from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { ListaFormComponent } from './lista-form/lista-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ListaTableComponent } from './lista-table/lista-table.component';
 
 
 @NgModule({
   declarations: [
     ListasComponent,
-    ListaFormComponent
+    ListaFormComponent,
+    ListaTableComponent
   ],
   imports: [
     CommonModule,
