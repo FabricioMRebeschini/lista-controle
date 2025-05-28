@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Lista } from '../model/lista';
-import { ListasService } from '../service/listas.service';
+import { Lista } from '../../listas/model/lista';
+import { ListasService } from '../../listas/service/listas.service';
 import { catchError, Observable, of } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 import { ErrorDialogComponent } from '../../shared/components/error-dialog/error-dialog.component';

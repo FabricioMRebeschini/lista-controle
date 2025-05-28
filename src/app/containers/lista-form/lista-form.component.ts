@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, NonNullableFormBuilder } from '@angular/forms';
-import { ListasService } from '../service/listas.service';
+import { ListasService } from '../../listas/service/listas.service';
 import { reduce } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Location } from '@angular/common';

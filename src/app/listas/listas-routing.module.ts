@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListasComponent } from './listas/listas.component';
-import { ListaFormComponent } from './lista-form/lista-form.component';
+import { ListasComponent } from '../containers/listas/listas.component';
+import { ListaFormComponent } from '../containers/lista-form/lista-form.component';
 
 const routes: Routes = [
   {path: '', component: ListasComponent},

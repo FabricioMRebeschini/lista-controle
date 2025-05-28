@@ -1,7 +1,7 @@
 <div class="container">
   <mat-card appearance="outlined">
       <div class="menu-page">
-        <button mat-button [matMenuTriggerFor]="menu">Menu(aula25)</button>
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
           <mat-menu #menu="matMenu">
         <button mat-menu-item>Computador de bordo</button>
         <button mat-menu-item>Piloto Automático</button>
@@ -12,7 +12,8 @@
       </div>
       <div class="mat-elevation-z8">
         <app-lista-table  class="tabela" *ngIf="listas$ | async as listas; else loading"
-        [listas]="listas"></app-lista-table>
+        [listas]="listas" (add)="onAdd()"
+        ></app-lista-table>
 
 
 
