@@ -12,6 +12,7 @@ export class ListaTableComponent implements OnInit{
 
     @Input() listas: Lista[] = [];
     @Output() add = new EventEmitter(false);
+    @Output() edit = new EventEmitter(false);
     readonly displayedColumns = ['name','quantify','actions'];
 
     constructor(){};
@@ -23,4 +24,12 @@ export class ListaTableComponent implements OnInit{
     // this.router.navigate(['new'], {relativeTo: this.route});
     this.add.emit(true);
   }
+
+    onEdit(lista: Lista){
+      this.edit.emit(lista);
+    }
+
+    onDelete(){
+
+    }
 }

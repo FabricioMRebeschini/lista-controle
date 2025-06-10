@@ -12,7 +12,7 @@
       </div>
       <div class="mat-elevation-z8">
         <app-lista-table  class="tabela" *ngIf="listas$ | async as listas; else loading"
-        [listas]="listas" (add)="onAdd()"
+        [listas]="listas" (add)="onAdd()" (edit)="onEdit($event)"
         ></app-lista-table>
 
 

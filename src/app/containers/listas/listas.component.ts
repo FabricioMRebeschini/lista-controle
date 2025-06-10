@@ -48,4 +48,8 @@ export class ListasComponent  implements OnInit{
     //Definindo a rota e especificando a mesma raiz
     this.router.navigate(['new'], {relativeTo: this.route});
   }
+
+  onEdit(lista: Lista){
+    this.router.navigate(['edit', lista._id], {relativeTo: this.route});
+  }
 }

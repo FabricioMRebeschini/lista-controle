@@ -4,6 +4,8 @@ import { ListasService } from '../../listas/service/listas.service';
 import { reduce } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
+import { Lista } from '../../listas/model/lista';
 
 @Component({
   selector: 'app-lista-form',
@@ -21,16 +23,23 @@ export class ListaFormComponent implements OnInit {
     private formBuilder: NonNullableFormBuilder,
     private service: ListasService,
     private snackBar: MatSnackBar,
-    private location: Location
+    private location: Location,
+    private route: ActivatedRoute
   ){
     this.form = this.formBuilder.group({
+      _id:[''],
       name:[''],
       quantity:['']
     });
   }
 
   ngOnInit(): void {
-
+    const lista: Lista = this.route.snapshot.data['lista'];
+    this.form.setValue({
+      _id: lista._id,
+      name: lista.name,
+      quantity: lista.quantity
+    })
   }
 
     onSubmit() {
