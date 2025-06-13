@@ -40,7 +40,18 @@ export class ListasService {
   }
 
 
-  save(record: Lista){
+  save(record: Partial<Lista>){
+    if(record._id){
+      return this.update(record);
+    }
+    return this.create(record);
+  }
+
+  private create(record: Partial<Lista>){
     return this.httpClient.post<Lista>(this.API, record).pipe(first());
+  }
+
+  private update(record: Partial<Lista>){
+    return this.httpClient.put<Lista>(`${this.API}/${record._id}`, record).pipe(first());
   }
 }
